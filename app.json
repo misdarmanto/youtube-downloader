@@ -1,14 +1,14 @@
 {
   "expo": {
-    "name": "TubesMp3Downloader",
-    "slug": "TubesMp3Downloader",
+    "name": "youtubeMp3Downloader",
+    "slug": "youtubeMp3Downloader",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#FA1584"
     },
     "updates": {
       "fallbackToCacheTimeout": 0
@@ -20,10 +20,15 @@
       "supportsTablet": true
     },
     "android": {
+      "versionCode": 1,
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#FFFFFF"
-      }
+        "backgroundColor": "#FA1584"
+      },
+      "config": {
+        "googleMobileAdsAppId": "ca-app-pub-8095237298596091~9195489273"
+      },
+      "package": "com.misdar.TubestMp3Downloader"
     },
     "web": {
       "favicon": "./assets/favicon.png"
