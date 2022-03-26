@@ -144,6 +144,10 @@ const style = StyleSheet.create({
     width: widthPercentage(95),
     marginVertical: heightPercentage(2),
   },
+  bannerAd: {
+    justifyContent: "center",
+    alignItems: "center",
+  },
   noInernet: {
     flex: 1,
     flexDirection: "row",

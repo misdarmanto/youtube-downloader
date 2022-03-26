@@ -1,6 +1,6 @@
 import * as FileSystem from "expo-file-system";
 import * as MediaLibrary from "expo-media-library";
-
+import RewardedAd from "../AdMob/RewardedAd";
 
 const downloadFileHandler = async (videoUrl, titleVieo, downloadProgress) => {
   const fileUri = FileSystem.documentDirectory + titleVieo;
@@ -10,6 +10,12 @@ const downloadFileHandler = async (videoUrl, titleVieo, downloadProgress) => {
     saveFile(res.uri);
     downloadProgress(false);
     alert("Download Finished");
+    RewardedAd();
+    // setTimeout(() => {
+    //   downloadProgress(false);
+    //   alert("Download Finished")
+    //   RewardedAd()
+    // }, 10000);
   } catch (e) {
     console.log(e);
   }
